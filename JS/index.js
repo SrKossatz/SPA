@@ -2,9 +2,9 @@ import { Router } from "./router.js";
 // variável const router criada para conseguir importar a classe Router
 const router = new Router() 
 router.add("/", "/pages/home.html")
-router.add("universe", "/pages/universe.html")
-router.add("exploration", "/pages/exploration.html")
-router.add(404, "/pages/error.html")
+router.add("/universe", "/pages/universe.html")
+router.add("/exploration", "/pages/exploration.html")
+router.add(404, "/pages/404.html")
 
 
 // Estrutura de object literal que foi remodelada acima.

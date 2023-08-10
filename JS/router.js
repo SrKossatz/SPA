@@ -12,11 +12,11 @@ export class Router{
   }
 
   route(e) {                                                         
-    e = e || window.e;
+    
+    e = e || window.event;
     e.preventDefault();
   
     window.history.pushState({}, "", e.target.href);
-    
     this.handle();
   }
 
